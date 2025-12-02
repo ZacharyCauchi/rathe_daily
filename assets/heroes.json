@@ -1,0 +1,1864 @@
+[
+  {
+    "id": "arakni",
+    "name": "Arakni",
+    "year": "2022",
+    "region": "Pits",
+    "set": "dyn",
+    "talents": [],
+    "classes": [
+      "Assassin"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "arakni-5l-p3d-7hru-7h3-cr4x",
+    "name": "Arakni, 5L!p3d 7hRu 7h3 cR4X",
+    "year": "2025",
+    "set": "promo",
+    "region": "Pits",
+    "talents": [
+      "Chaos"
+    ],
+    "classes": [
+      "Assassin"
+    ],
+    "intellect": "4",
+    "health": "38"
+  },
+  {
+    "id": "arakni-huntsman",
+    "name": "Arakni, Huntsman",
+    "year": "2022",
+    "set": "dyn",
+    "region": "Pits",
+    "talents": [],
+    "classes": [
+      "Assassin"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "arakni-marionette",
+    "name": "Arakni, Marionette",
+    "year": "2025",
+    "set": "hnt",
+    "region": "",
+    "talents": [
+      "Chaos"
+    ],
+    "classes": [
+      "Assassin"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "arakni-solitary-confinement",
+    "name": "Arakni, Solitary Confinement",
+    "year": "2023",
+    "region": "Pits",
+    "set": "out",
+    "talents": [],
+    "classes": [
+      "Assassin"
+    ],
+    "intellect": "4",
+    "health": "19"
+  },
+  {
+    "id": "arakni-web-of-deceit",
+    "name": "Arakni, Web of Deceit",
+    "year": "2025",
+    "set": "hnt",
+    "region": "Pits",
+    "talents": [
+      "Chaos"
+    ],
+    "classes": [
+      "Assassin"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "aurora",
+    "name": "Aurora",
+    "year": "2024",
+    "set": "ros",
+    "region": "Aria",
+    "talents": [
+      "Elemental"
+    ],
+    "classes": [
+      "Runeblade"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "aurora-shooting-star",
+    "name": "Aurora, Shooting Star",
+    "year": "2024",
+    "set": "ros",
+    "region": "Aria",
+    "talents": [
+      "Elemental"
+    ],
+    "classes": [
+      "Runeblade"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "azalea",
+    "name": "Azalea",
+    "year": "2020",
+    "set": "arc",
+    "region": "Pits",
+    "talents": [],
+    "classes": [
+      "Ranger"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "azalea-ace-in-the-hole",
+    "name": "Azalea, Ace in the Hole",
+    "year": "2020",
+    "set": "arc",
+    "region": "Pits",
+    "talents": [],
+    "classes": [
+      "Ranger"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "benji-the-piercing-wind",
+    "name": "Benji, the Piercing Wind",
+    "year": "2020",
+    "set": "cru",
+    "region": "Misteria",
+    "talents": [],
+    "classes": [
+      "Ninja"
+    ],
+    "intellect": "4",
+    "health": "17"
+  },
+  {
+    "id": "betsy",
+    "name": "Betsy",
+    "year": "2024",
+    "set": "hvy",
+    "region": "Deathmatch Arena",
+    "talents": [],
+    "classes": [
+      "Guardian"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "betsy-skin-in-the-game",
+    "name": "Betsy, Skin in the Game",
+    "year": "2024",
+    "set": "hvy",
+    "region": "Deathmatch Arena",
+    "talents": [],
+    "classes": [
+      "Guardian"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "blaze-firemind",
+    "name": "Blaze, Firemind",
+    "year": "2024",
+    "set": "promo",
+    "region": "Volcor",
+    "talents": [],
+    "classes": [
+      "Wizard"
+    ],
+    "intellect": "4",
+    "health": "17"
+  },
+  {
+    "id": "bolfar-bear-hands",
+    "name": "Bolfar, Bear Hands",
+    "year": "2025",
+    "set": "smp",
+    "region": "Deathmatch Arena",
+    "talents": [],
+    "classes": [
+      "Guardian"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "boltyn",
+    "name": "Boltyn",
+    "year": "2021",
+    "set": "mon",
+    "region": "Solana",
+    "talents": [
+      "Light"
+    ],
+    "classes": [
+      "Warrior"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "bravo",
+    "name": "Bravo",
+    "year": "2019",
+    "set": "wtr",
+    "region": "Aria",
+    "talents": [],
+    "classes": [
+      "Guardian"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "bravo-flattering-showman",
+    "name": "Bravo, Flattering Showman",
+    "year": "2025",
+    "set": "smp",
+    "region": "Aria",
+    "talents": [],
+    "classes": [
+      "Guardian"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "bravo-showstopper",
+    "name": "Bravo, Showstopper",
+    "year": "2019",
+    "set": "wtr",
+    "region": "Aria",
+    "talents": [],
+    "classes": [
+      "Guardian"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "bravo-star-of-the-show",
+    "name": "Bravo, Star of the Show",
+    "year": "2022",
+    "set": "evr",
+    "region": "Aria",
+    "talents": [
+      "Elemental"
+    ],
+    "classes": [
+      "Guardian"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "brevant-civic-protector",
+    "name": "Brevant, Civic Protector",
+    "year": "2023",
+    "set": "tcc",
+    "region": "Solana",
+    "talents": [],
+    "classes": [
+      "Guardian"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "briar",
+    "name": "Briar",
+    "year": "2021",
+    "set": "ele",
+    "region": "Aria",
+    "talents": [
+      "Elemental"
+    ],
+    "classes": [
+      "Runeblade"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "briar-warden-of-thorns",
+    "name": "Briar, Warden of Thorns",
+    "year": "2021",
+    "set": "ele",
+    "region": "Aria",
+    "talents": [
+      "Elemental"
+    ],
+    "classes": [
+      "Runeblade"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "brutus-summa-rudis",
+    "name": "Brutus, Summa Rudis",
+    "year": "2025",
+    "set": "smp",
+    "region": "Deathmatch Arena",
+    "talents": [],
+    "classes": [
+      "Adjudicator"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "chane",
+    "name": "Chane",
+    "year": "2021",
+    "set": "mon",
+    "region": "Demonastery",
+    "talents": [
+      "Shadow"
+    ],
+    "classes": [
+      "Runeblade"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "chane-bound-by-shadow",
+    "name": "Chane, Bound by Shadow",
+    "year": "2021",
+    "set": "mon",
+    "region": "Demonastery",
+    "talents": [
+      "Shadow"
+    ],
+    "classes": [
+      "Runeblade"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "cindra",
+    "name": "Cindra",
+    "year": "2025",
+    "set": "hnt",
+    "region": "Volcor",
+    "talents": [
+      "Royal",
+      "Draconic"
+    ],
+    "classes": [
+      "Ninja"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "cindra-dracai-of-retribution",
+    "name": "Cindra, Dracai of Retribution",
+    "year": "2025",
+    "set": "hnt",
+    "region": "Volcor",
+    "talents": [
+      "Royal",
+      "Draconic"
+    ],
+    "classes": [
+      "Ninja"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "dash",
+    "name": "Dash",
+    "year": "2020",
+    "set": "arc",
+    "region": "Metrix",
+    "talents": [],
+    "classes": [
+      "Mechanologist"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "dash-i-o",
+    "name": "Dash I/O",
+    "year": "2023",
+    "set": "evo",
+    "region": "Metrix",
+    "talents": [],
+    "classes": [
+      "Mechanologist"
+    ],
+    "intellect": "4",
+    "health": "36"
+  },
+  {
+    "id": "dash-database",
+    "name": "Dash, Database",
+    "year": "2023",
+    "set": "evo",
+    "region": "Metrix",
+    "talents": [],
+    "classes": [
+      "Mechanologist"
+    ],
+    "intellect": "4",
+    "health": "18"
+  },
+  {
+    "id": "dash-inventor-extraordinaire",
+    "name": "Dash, Inventor Extraordinaire",
+    "year": "2020",
+    "set": "arc",
+    "region": "Metrix",
+    "talents": [],
+    "classes": [
+      "Mechanologist"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "data-doll-mkii",
+    "name": "Data Doll MKII",
+    "year": "2020",
+    "set": "cru",
+    "region": "Metrix",
+    "talents": [],
+    "classes": [
+      "Mechanologist"
+    ],
+    "intellect": "3",
+    "health": "20"
+  },
+  {
+    "id": "dorinthea",
+    "name": "Dorinthea",
+    "year": "2019",
+    "set": "wtr",
+    "region": "Solana",
+    "talents": [],
+    "classes": [
+      "Warrior"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "dorinthea-ironsong",
+    "name": "Dorinthea Ironsong",
+    "year": "2019",
+    "set": "wtr",
+    "region": "Solana",
+    "talents": [],
+    "classes": [
+      "Warrior"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "dorinthea-quicksilver-prodigy",
+    "name": "Dorinthea, Quicksilver Prodigy",
+    "year": "2022",
+    "set": "dvr",
+    "region": "solana",
+    "talents": [],
+    "classes": [
+      "Warrior"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "dromai",
+    "name": "Dromai",
+    "year": "2022",
+    "set": "upr",
+    "region": "Volcor",
+    "talents": [
+      "Draconic"
+    ],
+    "classes": [
+      "Illusionist"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "dromai-ash-artist",
+    "name": "Dromai, Ash Artist",
+    "year": "2022",
+    "set": "upr",
+    "region": "Volcor",
+    "talents": [
+      "Draconic"
+    ],
+    "classes": [
+      "Illusionist"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "emperor-dracai-of-aesir",
+    "name": "Emperor, Dracai of Aesir",
+    "year": "2022",
+    "set": "dyn",
+    "region": "Volcor",
+    "talents": [
+      "Royal",
+      "Draconic"
+    ],
+    "classes": [
+      "Warrior",
+      "Wizard"
+    ],
+    "intellect": "4",
+    "health": "15"
+  },
+  {
+    "id": "enigma",
+    "name": "Enigma",
+    "year": "2024",
+    "set": "mst",
+    "region": "Misteria",
+    "talents": [
+      "Mystic"
+    ],
+    "classes": [
+      "Illusionist"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "enigma-ledger-of-ancestry",
+    "name": "Enigma, Ledger of Ancestry",
+    "year": "2024",
+    "set": "mst",
+    "region": "Misteria",
+    "talents": [
+      "Mystic"
+    ],
+    "classes": [
+      "Illusionist"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "enigma-new-moon",
+    "name": "Enigma, New Moon",
+    "year": "2024",
+    "set": "mst",
+    "region": "Misteria",
+    "talents": [
+      "Mystic"
+    ],
+    "classes": [
+      "Illusionist"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "fai",
+    "name": "Fai",
+    "year": "2022",
+    "set": "upr",
+    "region": "Volcor",
+    "talents": [
+      "Draconic"
+    ],
+    "classes": [
+      "Ninja"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "fai-rising-rebellion",
+    "name": "Fai, Rising Rebellion",
+    "year": "2022",
+    "set": "upr",
+    "region": "Volcor",
+    "talents": [
+      "Draconic"
+    ],
+    "classes": [
+      "Ninja"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "fang",
+    "name": "Fang",
+    "year": "2025",
+    "set": "hnt",
+    "region": "Volcor",
+    "talents": [
+      "Royal",
+      "Draconic"
+    ],
+    "classes": [
+      "Warrior"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "fang-dracai-of-blades",
+    "name": "Fang, Dracai of Blades",
+    "year": "2025",
+    "set": "hnt",
+    "region": "Volcor",
+    "talents": [
+      "Royal",
+      "Draconic"
+    ],
+    "classes": [
+      "Warrior"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "fightmaster-kox",
+    "name": "Fightmaster Kox",
+    "year": "2025",
+    "set": "smp",
+    "region": "Deathmatch Arena",
+    "talents": [],
+    "classes": [
+      "Guardian"
+    ],
+    "intellect": "4",
+    "health": "19"
+  },
+  {
+    "id": "florian",
+    "name": "Florian",
+    "year": "2024",
+    "set": "ros",
+    "region": "Aria",
+    "talents": [
+      "Elemental"
+    ],
+    "classes": [
+      "Runeblade"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "florian-rotwood-harbinger",
+    "name": "Florian, Rotwood Harbinger",
+    "year": "2024",
+    "set": "ros",
+    "region": "Aria",
+    "talents": [
+      "Elemental"
+    ],
+    "classes": [
+      "Runeblade"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "genis-wotchuneed",
+    "name": "Genis Wotchuneed",
+    "year": "2022",
+    "set": "evr",
+    "region": "Aria",
+    "talents": [],
+    "classes": [
+      "Merchant"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "gravy-bones",
+    "name": "Gravy Bones",
+    "year": "2025",
+    "set": "sea",
+    "region": "High Seas",
+    "talents": [],
+    "classes": [
+      "Pirate",
+      "Necromancer"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "gravy-bones-shipwrecked-looter",
+    "name": "Gravy Bones, Shipwrecked Looter",
+    "year": "2025",
+    "set": "sea",
+    "region": "High Seas",
+    "talents": [],
+    "classes": [
+      "Pirate",
+      "Necromancer"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "groundbreaker-crix",
+    "name": "Groundbreaker Crix",
+    "year": "2025",
+    "set": "smp",
+    "region": "Deathmatch Arena",
+    "talents": [],
+    "classes": [
+      "Guardian"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "ira-crimson-haze",
+    "name": "Ira, Crimson Haze",
+    "year": "2019",
+    "set": "promo",
+    "region": "Misteria",
+    "talents": [],
+    "classes": [
+      "Ninja"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "ira-scarlet-revenger",
+    "name": "Ira, Scarlet Revenger",
+    "year": "2024",
+    "set": "promo",
+    "region": "Misteria",
+    "talents": [],
+    "classes": [
+      "Ninja"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "iyslander",
+    "name": "Iyslander",
+    "year": "2022",
+    "set": "evr",
+    "region": "Aria",
+    "talents": [
+      "Elemental"
+    ],
+    "classes": [
+      "Wizard"
+    ],
+    "intellect": "4",
+    "health": "18"
+  },
+  {
+    "id": "iyslander-stormbind",
+    "name": "Iyslander, Stormbind",
+    "year": "2022",
+    "set": "upr",
+    "region": "Aria",
+    "talents": [
+      "Elemental"
+    ],
+    "classes": [
+      "Wizard"
+    ],
+    "intellect": "4",
+    "health": "36"
+  },
+  {
+    "id": "jarl-vetrei-i",
+    "name": "Jarl Vetreiði",
+    "year": "2024",
+    "set": "ajv",
+    "region": "Aria",
+    "talents": [
+      "Elemental"
+    ],
+    "classes": [
+      "Guardian"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "kano",
+    "name": "Kano",
+    "year": "2020",
+    "set": "arc",
+    "region": "Volcor",
+    "talents": [],
+    "classes": [
+      "Wizard"
+    ],
+    "intellect": "4",
+    "health": "15"
+  },
+  {
+    "id": "kano-dracai-of-aether",
+    "name": "Kano, Dracai of Aether",
+    "year": "2020",
+    "set": "arc",
+    "region": "Volcor",
+    "talents": [],
+    "classes": [
+      "Wizard"
+    ],
+    "intellect": "4",
+    "health": "30"
+  },
+  {
+    "id": "kassai",
+    "name": "Kassai",
+    "year": "2024",
+    "set": "hvy",
+    "region": "Volcor",
+    "talents": [],
+    "classes": [
+      "Warrior"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "kassai-of-the-golden-sand",
+    "name": "Kassai of the Golden Sand",
+    "year": "2024",
+    "set": "hvy",
+    "region": "Volcor",
+    "talents": [],
+    "classes": [
+      "Warrior"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "kassai-cintari-sellsword",
+    "name": "Kassai, Cintari Sellsword",
+    "year": "2020",
+    "set": "cru",
+    "region": "Volcor",
+    "talents": [],
+    "classes": [
+      "Warrior"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "katsu",
+    "name": "Katsu",
+    "year": "2019",
+    "set": "wtr",
+    "region": "Misteria",
+    "talents": [],
+    "classes": [
+      "Ninja"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "katsu-the-wanderer",
+    "name": "Katsu, the Wanderer",
+    "year": "2019",
+    "set": "wtr",
+    "region": "Misteria",
+    "talents": [],
+    "classes": [
+      "Ninja"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "kavdaen-trader-of-skins",
+    "name": "Kavdaen, Trader of Skins",
+    "year": "2020",
+    "set": "cru",
+    "region": "Pits",
+    "talents": [],
+    "classes": [
+      "Merchant"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "kayo",
+    "name": "Kayo",
+    "year": "2024",
+    "set": "hvy",
+    "region": "Savage Lands",
+    "talents": [],
+    "classes": [
+      "Brute"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "kayo-armed-and-dangerous",
+    "name": "Kayo, Armed and Dangerous",
+    "year": "2024",
+    "set": "hvy",
+    "region": "Savage Lands",
+    "talents": [],
+    "classes": [
+      "Brute"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "kayo-berserker-runt",
+    "name": "Kayo, Berserker Runt",
+    "year": "2020",
+    "set": "cru",
+    "region": "Savage Lands",
+    "talents": [],
+    "classes": [
+      "Brute"
+    ],
+    "intellect": "4",
+    "health": "19"
+  },
+  {
+    "id": "kayo-strong-arm",
+    "name": "Kayo, Strong-arm",
+    "year": "2025",
+    "set": "sup",
+    "region": "Savage Lands",
+    "talents": [
+      "Reviled"
+    ],
+    "classes": [
+      "Brute"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "kayo-underhanded-cheat",
+    "name": "Kayo, Underhanded Cheat",
+    "year": "2025",
+    "set": "sup",
+    "region": "Savage Lands",
+    "talents": [
+      "Reviled"
+    ],
+    "classes": [
+      "Brute"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "levia",
+    "name": "Levia",
+    "year": "2021",
+    "set": "mon",
+    "region": "Demonastery",
+    "talents": [
+      "Shadow"
+    ],
+    "classes": [
+      "Brute"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "levia-shadowborn-abomination",
+    "name": "Levia, Shadowborn Abomination",
+    "year": "2021",
+    "set": "mon",
+    "region": "Demonastery",
+    "talents": [
+      "Shadow"
+    ],
+    "classes": [
+      "Brute"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "lexi",
+    "name": "Lexi",
+    "year": "2021",
+    "set": "ele",
+    "region": "Aria",
+    "talents": [
+      "Elemental"
+    ],
+    "classes": [
+      "Ranger"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "lexi-livewire",
+    "name": "Lexi, Livewire",
+    "year": "2021",
+    "set": "ele",
+    "region": "Aria",
+    "talents": [
+      "Elemental"
+    ],
+    "classes": [
+      "Ranger"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "lyath-goldmane",
+    "name": "Lyath Goldmane",
+    "year": "2025",
+    "set": "sup",
+    "region": "Solana",
+    "talents": [
+      "Reviled"
+    ],
+    "classes": [
+      "Guardian"
+    ],
+    "intellect": "5",
+    "health": "20"
+  },
+  {
+    "id": "lyath-goldmane-vile-savant",
+    "name": "Lyath Goldmane, Vile Savant",
+    "year": "2025",
+    "set": "sup",
+    "region": "Solana",
+    "talents": [
+      "Reviled"
+    ],
+    "classes": [
+      "Guardian"
+    ],
+    "intellect": "5",
+    "health": "40"
+  },
+  {
+    "id": "marlynn",
+    "name": "Marlynn",
+    "year": "2025",
+    "set": "sea",
+    "region": "High Seas",
+    "talents": [],
+    "classes": [
+      "Pirate",
+      "Ranger"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "marlynn-treasure-hunter",
+    "name": "Marlynn, Treasure Hunter",
+    "year": "2025",
+    "set": "sea",
+    "region": "High Seas",
+    "talents": [],
+    "classes": [
+      "Pirate",
+      "Ranger"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "maxx-the-hype-nitro",
+    "name": "Maxx 'The Hype' Nitro",
+    "year": "2023",
+    "set": "evo",
+    "region": "Metrix",
+    "talents": [],
+    "classes": [
+      "Mechanologist"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "maxx-nitro",
+    "name": "Maxx Nitro",
+    "year": "2023",
+    "set": "evo",
+    "region": "Metrix",
+    "talents": [],
+    "classes": [
+      "Mechanologist"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "melody-sing-along",
+    "name": "Melody, Sing-along",
+    "year": "2023",
+    "set": "tcc",
+    "region": "Aria",
+    "talents": [],
+    "classes": [
+      "Bard"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "nuu",
+    "name": "Nuu",
+    "year": "2024",
+    "set": "mst",
+    "region": "Misteria",
+    "talents": [
+      "Mystic"
+    ],
+    "classes": [
+      "Assassin"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "nuu-alluring-desire",
+    "name": "Nuu, Alluring Desire",
+    "year": "2024",
+    "set": "mst",
+    "region": "Misteria",
+    "talents": [
+      "Mystic"
+    ],
+    "classes": [
+      "Assassin"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "oldhim",
+    "name": "Oldhim",
+    "year": "2021",
+    "set": "ele",
+    "region": "Aria",
+    "talents": [
+      "Elemental"
+    ],
+    "classes": [
+      "Guardian"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "oldhim-grandfather-of-eternity",
+    "name": "Oldhim, Grandfather of Eternity",
+    "year": "2021",
+    "set": "ele",
+    "region": "Aria",
+    "talents": [
+      "Elemental"
+    ],
+    "classes": [
+      "Guardian"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "olympia",
+    "name": "Olympia",
+    "year": "2024",
+    "set": "hvy",
+    "region": "Deathmatch Arena",
+    "talents": [],
+    "classes": [
+      "Warrior"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "olympia-prized-fighter",
+    "name": "Olympia, Prized Fighter",
+    "year": "2024",
+    "set": "hvy",
+    "region": "Deathmatch Arena",
+    "talents": [],
+    "classes": [
+      "Warrior"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "oscilio",
+    "name": "Oscilio",
+    "year": "2024",
+    "set": "ros",
+    "region": "Aria",
+    "talents": [
+      "Elemental"
+    ],
+    "classes": [
+      "Wizard"
+    ],
+    "intellect": "4",
+    "health": "18"
+  },
+  {
+    "id": "oscilio-constella-intelligence",
+    "name": "Oscilio, Constella Intelligence",
+    "year": "2024",
+    "set": "ros",
+    "region": "Aria",
+    "talents": [
+      "Elemental"
+    ],
+    "classes": [
+      "Wizard"
+    ],
+    "intellect": "4",
+    "health": "36"
+  },
+  {
+    "id": "pleiades",
+    "name": "Pleiades",
+    "year": "2025",
+    "set": "sup",
+    "region": "Deathmatch Arena",
+    "talents": [
+      "Revered"
+    ],
+    "classes": [
+      "Guardian"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "pleiades-superstar",
+    "name": "Pleiades, Superstar",
+    "year": "2025",
+    "set": "sup",
+    "region": "Deathmatch Arena",
+    "talents": [
+      "Revered"
+    ],
+    "classes": [
+      "Guardian"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "prism",
+    "name": "Prism",
+    "year": "2021",
+    "set": "mon",
+    "region": "Solana",
+    "talents": [
+      "Light"
+    ],
+    "classes": [
+      "Illusionist"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "prism-advent-of-thrones",
+    "name": "Prism, Advent of Thrones",
+    "year": "2023",
+    "set": "dtd",
+    "region": "Solana",
+    "talents": [
+      "Light"
+    ],
+    "classes": [
+      "Illusionist"
+    ],
+    "intellect": "4",
+    "health": "16"
+  },
+  {
+    "id": "prism-awakener-of-sol",
+    "name": "Prism, Awakener of Sol",
+    "year": "2023",
+    "set": "dtd",
+    "region": "Solana",
+    "talents": [
+      "Light"
+    ],
+    "classes": [
+      "Illusionist"
+    ],
+    "intellect": "4",
+    "health": "32"
+  },
+  {
+    "id": "prism-sculptor-of-arc-light",
+    "name": "Prism, Sculptor of Arc Light",
+    "year": "2021",
+    "set": "mon",
+    "region": "Solana",
+    "talents": [
+      "Light"
+    ],
+    "classes": [
+      "Illusionist"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "professor-teklovossen",
+    "name": "Professor Teklovossen",
+    "year": "2023",
+    "set": "tcc",
+    "region": "Metrix",
+    "talents": [],
+    "classes": [
+      "Mechanologist"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "puffin",
+    "name": "Puffin",
+    "year": "2025",
+    "set": "sea",
+    "region": "High Seas",
+    "talents": [],
+    "classes": [
+      "Pirate",
+      "Mechanologist"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "puffin-hightail",
+    "name": "Puffin, Hightail",
+    "year": "2025",
+    "set": "sea",
+    "region": "High Seas",
+    "talents": [],
+    "classes": [
+      "Pirate",
+      "Mechanologist"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "reya-the-unyielding",
+    "name": "Reya, the Unyielding",
+    "year": "2025",
+    "set": "smp",
+    "region": "Deathmatch Arena",
+    "talents": [],
+    "classes": [
+      "Guardian"
+    ],
+    "intellect": "4",
+    "health": "21"
+  },
+  {
+    "id": "rhinar",
+    "name": "Rhinar",
+    "year": "2019",
+    "set": "wtr",
+    "region": "Savage Lands",
+    "talents": [],
+    "classes": [
+      "Brute"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "rhinar-reckless-rampage",
+    "name": "Rhinar, Reckless Rampage",
+    "year": "2019",
+    "set": "wtr",
+    "region": "Savage Lands",
+    "talents": [],
+    "classes": [
+      "Brute"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "riptide",
+    "name": "Riptide",
+    "year": "2023",
+    "set": "out",
+    "region": "Pits",
+    "talents": [],
+    "classes": [
+      "Ranger"
+    ],
+    "intellect": "4",
+    "health": "19"
+  },
+  {
+    "id": "riptide-lurker-of-the-deep",
+    "name": "Riptide, Lurker of the Deep",
+    "year": "2023",
+    "set": "out",
+    "region": "Pits",
+    "talents": [],
+    "classes": [
+      "Ranger"
+    ],
+    "intellect": "4",
+    "health": "38"
+  },
+  {
+    "id": "scurv-stowaway",
+    "name": "Scurv, Stowaway",
+    "year": "2025",
+    "set": "sea",
+    "region": "High Seas",
+    "talents": [],
+    "classes": [
+      "Pirate",
+      "Thief"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "ser-boltyn-breaker-of-dawn",
+    "name": "Ser Boltyn, Breaker of Dawn",
+    "year": "2021",
+    "set": "mon",
+    "region": "Solana",
+    "talents": [
+      "Light"
+    ],
+    "classes": [
+      "Warrior"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "shiyana-diamond-gemini",
+    "name": "Shiyana, Diamond Gemini",
+    "year": "2020",
+    "set": "cru",
+    "region": "Solana",
+    "talents": [],
+    "classes": [
+      "Shapeshifter"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "squizzy-floof",
+    "name": "Squizzy & Floof",
+    "year": "2023",
+    "set": "promo",
+    "region": "Aria",
+    "talents": [],
+    "classes": [
+      "Merchant"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "taipanis-dracai-of-judgement",
+    "name": "Taipanis, Dracai of Judgement",
+    "year": "2022",
+    "set": "promo",
+    "region": "Volcor",
+    "talents": [
+      "Draconic"
+    ],
+    "classes": [
+      "Adjudicator"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "taylor",
+    "name": "Taylor",
+    "year": "2022",
+    "set": "promo",
+    "region": "Aria",
+    "talents": [],
+    "classes": [
+      "Shapeshifter"
+    ],
+    "intellect": "4",
+    "health": "18"
+  },
+  {
+    "id": "teklovossen",
+    "name": "Teklovossen",
+    "year": "2023",
+    "set": "evo",
+    "region": "Metrix",
+    "talents": [],
+    "classes": [
+      "Mechanologist"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "teklovossen-esteemed-magnate",
+    "name": "Teklovossen, Esteemed Magnate",
+    "year": "2023",
+    "set": "evo",
+    "region": "Metrix",
+    "talents": [],
+    "classes": [
+      "Mechanologist"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "terra",
+    "name": "Terra",
+    "year": "2024",
+    "set": "ter",
+    "region": "Aria",
+    "talents": [
+      "Elemental"
+    ],
+    "classes": [
+      "Guardian"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "theryon-magister-of-justice",
+    "name": "Theryon, Magister of Justice",
+    "year": "2024",
+    "set": "promo",
+    "region": "Solana",
+    "talents": [
+      "Light"
+    ],
+    "classes": [
+      "Adjudicator"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "tuffnut",
+    "name": "Tuffnut",
+    "year": "2025",
+    "set": "sup",
+    "region": "Deathmatch Arena",
+    "talents": [
+      "Revered"
+    ],
+    "classes": [
+      "Brute"
+    ],
+    "intellect": "3",
+    "health": "20"
+  },
+  {
+    "id": "tuffnut-bumbling-hulkster",
+    "name": "Tuffnut, Bumbling Hulkster",
+    "year": "2025",
+    "set": "sup",
+    "region": "Deathmatch Arena",
+    "talents": [
+      "Revered"
+    ],
+    "classes": [
+      "Brute"
+    ],
+    "intellect": "3",
+    "health": "40"
+  },
+  {
+    "id": "uzuri",
+    "name": "Uzuri",
+    "year": "2023",
+    "set": "out",
+    "region": "Pits",
+    "talents": [],
+    "classes": [
+      "Assassin"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "uzuri-switchblade",
+    "name": "Uzuri, Switchblade",
+    "year": "2023",
+    "set": "out",
+    "region": "Pits",
+    "talents": [],
+    "classes": [
+      "Assassin"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "valda-brightaxe",
+    "name": "Valda Brightaxe",
+    "year": "2022",
+    "set": "evr",
+    "region": "Aria",
+    "talents": [],
+    "classes": [
+      "Guardian"
+    ],
+    "intellect": "4",
+    "health": "21"
+  },
+  {
+    "id": "valda-seismic-impact",
+    "name": "Valda, Seismic Impact",
+    "year": "2025",
+    "set": "mpg",
+    "region": "Aria",
+    "talents": [],
+    "classes": [
+      "Guardian"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "verdance",
+    "name": "Verdance",
+    "year": "",
+    "set": "",
+    "region": "",
+    "talents": [
+      "Elemental"
+    ],
+    "classes": [
+      "Wizard"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "verdance-thorn-of-the-rose",
+    "name": "Verdance, Thorn of the Rose",
+    "year": "2024",
+    "set": "ros",
+    "region": "Aria",
+    "talents": [
+      "Elemental"
+    ],
+    "classes": [
+      "Wizard"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "victor-goldmane",
+    "name": "Victor Goldmane",
+    "year": "2024",
+    "set": "hvy",
+    "region": "Solana",
+    "talents": [],
+    "classes": [
+      "Guardian"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "victor-goldmane-high-and-mighty",
+    "name": "Victor Goldmane, High and Mighty",
+    "year": "2024",
+    "set": "hvy",
+    "region": "Solana",
+    "talents": [],
+    "classes": [
+      "Guardian"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "victor-goldmane-match-fixer",
+    "name": "Victor Goldmane, Match Fixer",
+    "year": "2025",
+    "set": "smp",
+    "region": "Solana",
+    "talents": [],
+    "classes": [
+      "Guardian"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "viserai",
+    "name": "Viserai",
+    "year": "2020",
+    "set": "arc",
+    "region": "Demonastery",
+    "talents": [],
+    "classes": [
+      "Runeblade"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "viserai-rune-blood",
+    "name": "Viserai, Rune Blood",
+    "year": "2020",
+    "set": "arc",
+    "region": "Demonastery",
+    "talents": [],
+    "classes": [
+      "Runeblade"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "vynnset",
+    "name": "Vynnset",
+    "year": "2023",
+    "set": "dtd",
+    "region": "Demonastery",
+    "talents": [
+      "Shadow"
+    ],
+    "classes": [
+      "Runeblade"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "vynnset-iron-maiden",
+    "name": "Vynnset, Iron Maiden",
+    "year": "2023",
+    "set": "dtd",
+    "region": "Demonastery",
+    "talents": [
+      "Shadow"
+    ],
+    "classes": [
+      "Runeblade"
+    ],
+    "intellect": "4",
+    "health": "40"
+  },
+  {
+    "id": "yoji-royal-protector",
+    "name": "Yoji, Royal Protector",
+    "year": "2022",
+    "set": "dyn",
+    "region": "Volcor",
+    "talents": [],
+    "classes": [
+      "Guardian"
+    ],
+    "intellect": "4",
+    "health": "22"
+  },
+  {
+    "id": "yorick-weaver-of-tales",
+    "name": "Yorick, Weaver of Tales",
+    "year": "2022",
+    "set": "promo",
+    "region": "Aria",
+    "talents": [],
+    "classes": [
+      "Bard"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "zen",
+    "name": "Zen",
+    "year": "2024",
+    "set": "mst",
+    "region": "Misteria",
+    "talents": [
+      "Mystic"
+    ],
+    "classes": [
+      "Ninja"
+    ],
+    "intellect": "4",
+    "health": "20"
+  },
+  {
+    "id": "zen-tamer-of-purpose",
+    "name": "Zen, Tamer of Purpose",
+    "year": "2024",
+    "set": "mst",
+    "region": "Misteria",
+    "talents": [
+      "Mystic"
+    ],
+    "classes": [
+      "Ninja"
+    ],
+    "intellect": "4",
+    "health": "40"
+  }
+]
