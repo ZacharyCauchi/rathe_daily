@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react";
 import heroesData from "../../assets/heroes.json";
 
-type Hero = {
+export type Hero = {
     id: string;
     name: string;
     year: number;
@@ -28,7 +28,13 @@ const heroes: Hero[] = heroesData.map((h) => ({
     intellect: Number(h.intellect),
     health: Number(h.health),
 }));
-export function HeroSearch() {
+
+type Props = {
+    handleSelect: (hero: Hero) => void;
+};
+
+
+export function HeroSearch({ handleSelect }: Props) {
     const [query, setQuery] = useState("");
     const [selectedHero, setSelectedHero] = useState<Hero | null>(null);
     const [isFocused, setIsFocused] = useState(false);
@@ -56,14 +62,15 @@ export function HeroSearch() {
             .slice(0, 10);
     }, [query]);
 
-    function handleSelect(hero: Hero) {
+    function handleDropdownSelect(hero: Hero) {
         setSelectedHero(hero);
         setQuery(hero.name);
         setIsFocused(false);
+        handleSelect(hero);
     }
 
     return (
-        <Box maxW="480px" mx="auto">
+        <Box maxW="480px" mx="auto" w="100%">
             <Box position="relative">
                 <Input
                     value={query}
@@ -113,8 +120,10 @@ export function HeroSearch() {
                                 py={2}
                                 _hover={{ bg: "gray.50" }}
                                 _focus={{ outline: "none", bg: "gray.50" }}
-                                onMouseDown={(e) => e.preventDefault()}
-                                onClick={() => handleSelect(hero)}
+                                onMouseDown={(e: React.MouseEvent<HTMLDivElement>) => {
+                                    e.preventDefault();
+                                }}
+                                onClick={() => handleDropdownSelect(hero)}
                             >
                                 <Text fontSize="sm" fontWeight="semibold">
                                     {hero.name}
@@ -124,62 +133,6 @@ export function HeroSearch() {
                     </Box>
                 )}
             </Box>
-
-            {selectedHero && (
-                <Card.Root mt={4} size="sm">
-                    <Card.Body>
-                        <VStack align="flex-start" gap={1}>
-                            <Box>
-                                <Text fontSize="lg" fontWeight="bold">
-                                    {selectedHero.name}
-                                </Text>
-                                <Text fontSize="xs" color="gray.500">
-                                    {selectedHero.id}
-                                </Text>
-                            </Box>
-
-                            <Text fontSize="sm">
-                                <Text as="span" fontWeight="semibold">
-                                    Year:
-                                </Text>{" "}
-                                {selectedHero.year} ·{" "}
-                                <Text as="span" fontWeight="semibold">
-                                    Set:
-                                </Text>{" "}
-                                {selectedHero.set}
-                            </Text>
-
-                            <Text fontSize="sm">
-                                <Text as="span" fontWeight="semibold">
-                                    Region:
-                                </Text>{" "}
-                                {selectedHero.region}
-                            </Text>
-
-                            <Text fontSize="sm">
-                                <Text as="span" fontWeight="semibold">
-                                    Classes:
-                                </Text>{" "}
-                                {selectedHero.classes.join(", ") || "—"}
-                            </Text>
-
-                            <Text fontSize="sm">
-                                <Text as="span" fontWeight="semibold">
-                                    Talents:
-                                </Text>{" "}
-                                {selectedHero.talents.join(", ") || "—"}
-                            </Text>
-
-                            <Text fontSize="sm">
-                                <Text as="span" fontWeight="semibold">
-                                    Intellect / Health:
-                                </Text>{" "}
-                                {selectedHero.intellect} / {selectedHero.health}
-                            </Text>
-                        </VStack>
-                    </Card.Body>
-                </Card.Root>
-            )}
         </Box>
     );
 }
