@@ -35,18 +35,28 @@ export function HeroResultBox({ label, display, status }: HeroField) {
         wrong: "red.400",
     }[status];
 
+    console.log('label', label)
+    console.log('display', display)
+    console.log('status', status)
+
     return (
         <Box
             display="grid"
             placeItems="center"
-            w="100px"
-            h="100px"
+            w={{
+                base: "75px",
+                md: "100px",
+            }}
+            h={{
+                base: "75px",
+                md: "100px",
+            }}
             bg={bg}
             color="white"
             borderRadius="md"
         >
             <Text fontSize="s">{label}</Text>
-            <Text fontWeight="semibold" fontSize="xs">{display}</Text>
+            <Text fontWeight="semibold" fontSize="xs">{display || 'None'}</Text>
         </Box>
     );
 }

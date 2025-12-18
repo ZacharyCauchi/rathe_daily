@@ -39,6 +39,9 @@ export function HeroResult({ selectedHero, heroToday }: Props) {
     function arraysStatus(a: string[], b: string[]): MatchStatus {
         const aSet = new Set(a);
         const bSet = new Set(b);
+
+        if (aSet.size === 0 && bSet.size === 0) return "correct";
+
         const intersection = [...aSet].filter((x) => bSet.has(x)).length;
 
         if (intersection === 0) return "wrong";
@@ -82,8 +85,13 @@ export function HeroResult({ selectedHero, heroToday }: Props) {
     return (
         <Box
             display="grid"
-            gridTemplateColumns="repeat(6, 100px)"
+            gridTemplateColumns={{
+                base: "repeat(6, 75px)",
+                md: "repeat(6, 100px)",
+            }}
             gap="8px"
+            overflowX="auto"
+            maxW="90vw"
         >
             {fields.map((f) => (
                 <HeroResultBox key={f.label} {...f} />

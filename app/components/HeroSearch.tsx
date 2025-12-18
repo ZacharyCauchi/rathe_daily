@@ -64,26 +64,26 @@ export function HeroSearch({ handleSelect }: Props) {
 
     function handleDropdownSelect(hero: Hero) {
         setSelectedHero(hero);
-        setQuery(hero.name);
+        setQuery("");
         setIsFocused(false);
         handleSelect(hero);
     }
 
     return (
-        <Box maxW="480px" mx="auto" w="100%">
+        <Box maxW="480px" mx="auto" w="100%" mb="8px">
             <Box position="relative">
                 <Input
                     value={query}
-                    placeholder="Search hero by name, id, class, region…"
+                    placeholder="Type a hero name..."
                     size="sm"
                     onChange={(e) => {
                         setQuery(e.target.value);
                         setSelectedHero(null);
+                        setIsFocused(true);
                     }}
                     onFocus={() => setIsFocused(true)}
                     onBlur={() => {
-                        // let click on dropdown item register first
-                        setTimeout(() => setIsFocused(false), 150);
+                        setIsFocused(false);
                     }}
                 />
 
