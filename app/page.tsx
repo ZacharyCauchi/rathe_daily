@@ -6,6 +6,8 @@ import heroesData from "../assets/heroes.json";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { HeroResult } from "./components/HeroResult";
 import JSConfetti from "js-confetti";
+import { Analytics } from "@vercel/analytics/next"
+
 
 const xmur3 = (str: string) => {
   let h = 1779033703 ^ str.length;
@@ -78,6 +80,7 @@ export default function Home() {
       alignItems="center"
       justifyContent="center"
     >
+      <Analytics />
       <Box
         as="main"
         minH="100vh"
