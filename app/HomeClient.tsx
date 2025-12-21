@@ -23,23 +23,29 @@ export default function HomeClient({
 
     const storageKeyForDay = `${STORAGE_KEY_BASE}_${todayHero.id}`;
 
-    const [selectedHeroes, setSelectedHeroes] = useState<Hero[]>(() => {
+    const [selectedHeroes, setSelectedHeroes] = useState<Hero[]>([]);
+
+    const jsConfettiRef = useRef<JSConfetti | null>(null);
+    const [gameComplete, setGameComplete] = useState<boolean>(false);
+
+    useEffect(() => {
+        if (typeof window === "undefined") return;
+
         try {
             const raw = localStorage.getItem(storageKeyForDay);
-            if (!raw) return [];
+            if (!raw) return;
+
             const parsed = JSON.parse(raw) as { heroes: Hero[]; ts: number };
             if (Date.now() - parsed.ts < EXPIRY_MS) {
-                return parsed.heroes || [];
+                // eslint-disable-next-line react-hooks/set-state-in-effect
+                setSelectedHeroes(parsed.heroes || []);
             } else {
                 localStorage.removeItem(storageKeyForDay);
             }
-        } catch (e) {
+        } catch {
             localStorage.removeItem(storageKeyForDay);
         }
-        return [];
-    });
-    const jsConfettiRef = useRef<JSConfetti | null>(null);
-    const [gameComplete, setGameComplete] = useState<boolean>(false);
+    }, [storageKeyForDay]);
 
     useEffect(() => {
         jsConfettiRef.current = new JSConfetti();
@@ -68,9 +74,9 @@ export default function HomeClient({
 
     return (
         <Box minH="100vh" bg="zinc.50" display="flex" alignItems="center" justifyContent="center" backgroundImage="url('compendium_bg.jpg')" backgroundPosition="center" backgroundRepeat="no-repeat" backgroundSize="cover" backgroundAttachment="fixed">
-            <Box h="100vh" bg="rgba(255,255,255,0.85)" _dark={{ bg: "rgba(0,0,0,0.65)" }} w="100%" backdropFilter="blur(4px)" display="flex" flexDir="column" alignItems={{ base: "center", sm: "center" }} justifyContent="flex-start" >
+            <Box h="100%" minH="100vh" bg="rgba(255,255,255,0.85)" _dark={{ bg: "rgba(0,0,0,0.65)" }} w="100%" backdropFilter="blur(4px)" display="flex" flexDir="column" alignItems={{ base: "center", sm: "center" }} justifyContent="flex-start" >
                 <Analytics />
-                <Box as="main" w="full" h="100%" maxW="6xl" display="flex" flexDir="column" alignItems={{ base: "center", sm: "center" }} justifyContent="space-between" py={32} pb={0} px={16}>
+                <Box as="main" w="full" h="100%" minH="100vh" maxW="6xl" display="flex" flexDir="column" alignItems={{ base: "center", sm: "center" }} justifyContent="space-between" py={32} pb={0} px={16}>
                     <Box display="flex" flexDir="column">
                         <Stack align={{ base: "center", sm: "flex-start" }} textAlign="center">
                             <Heading as="h1" width="100%" fontSize="3xl" fontWeight="bold" lineHeight="2.5rem" letterSpacing="-0.03em" color="black" _dark={{ color: "zinc.50" }}>
