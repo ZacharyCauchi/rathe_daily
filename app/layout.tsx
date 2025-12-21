@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Rathe Daily Game",
-  description: "Guess todays hero in a fabtcg dle",
+  title: "Fabdle - Daily Fabtcg Hero Guessing Game",
+  description: "Guess a new hero every day in this Flesh and Blood themed wordle-like game.",
 };
 
 export default function RootLayout({

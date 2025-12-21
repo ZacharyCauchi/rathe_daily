@@ -80,7 +80,7 @@ export default function HomeClient({
                     <Box display="flex" flexDir="column">
                         <Stack align={{ base: "center", sm: "flex-start" }} textAlign="center">
                             <Heading as="h1" width="100%" fontSize="3xl" fontWeight="bold" lineHeight="2.5rem" letterSpacing="-0.03em" color="black" _dark={{ color: "zinc.50" }}>
-                                Rathedle
+                                Fabdle
                             </Heading>
 
                             <Heading as="h3" width="100%" fontSize="1xl" fontWeight="400" lineHeight="1.5rem" letterSpacing="-0.03em" color="black" _dark={{ color: "zinc.50" }}>
