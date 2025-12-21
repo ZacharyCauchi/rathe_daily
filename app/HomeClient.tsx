@@ -79,12 +79,12 @@ export default function HomeClient({
                 <Box as="main" w="full" h="100%" minH="100vh" maxW="6xl" display="flex" flexDir="column" alignItems={{ base: "center", sm: "center" }} justifyContent="space-between" py={32} pb={0} px={16}>
                     <Box display="flex" flexDir="column">
                         <Stack align={{ base: "center", sm: "flex-start" }} textAlign="center">
-                            <Heading as="h1" width="100%" fontSize="3xl" fontWeight="bold" lineHeight="2.5rem" letterSpacing="-0.03em" color="black" _dark={{ color: "zinc.50" }}>
+                            <Heading as="h1" width="100%" fontSize="4xl" fontWeight="bold" lineHeight="2.5rem" letterSpacing="-0.03em" color="black" _dark={{ color: "zinc.50" }}>
                                 Fabdle
                             </Heading>
 
-                            <Heading as="h3" width="100%" fontSize="1xl" fontWeight="400" lineHeight="1.5rem" letterSpacing="-0.03em" color="black" _dark={{ color: "zinc.50" }}>
-                                Guess a Flesh and Blood Hero. Deduce todays hero by process of elimination.
+                            <Heading as="h3" width="100%" fontSize="2xl" fontWeight="400" lineHeight="1.5rem" letterSpacing="-0.03em" color="black" _dark={{ color: "zinc.50" }} mb="4px">
+                                Guess today&apos;s Flesh and Blood hero!
                             </Heading>
 
                             <HeroSearch handleSelect={selectHero} disabled={gameComplete} />
