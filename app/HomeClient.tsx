@@ -113,7 +113,7 @@ export default function HomeClient({
                             color="blackAlpha.700"
                             _dark={{ color: "whiteAlpha.700" }}
                         >
-                            <Text>Made by Zac</Text>
+                            <Text>Made by @thatzachary</Text>
                             <Text>·</Text>
                             <Link
                                 as={NextLink}
