@@ -7,6 +7,9 @@ import { Analytics } from "@vercel/analytics/next";
 
 import { HeroSearch, Hero } from "./components/HeroSearch";
 import { HeroResult } from "./components/HeroResult";
+import { HeroResultHeader } from "./components/HeroResultHeader";
+import NextLink from "next/link";
+import { HStack, Link, Text } from "@chakra-ui/react";
 
 export default function HomeClient({
     heroes,
@@ -30,26 +33,62 @@ export default function HomeClient({
     };
 
     return (
-        <Box minH="100vh" bg="zinc.50" _dark={{ bg: "black" }} display="flex" alignItems="center" justifyContent="center">
-            <Analytics />
-            <Box as="main" minH="100vh" w="full" maxW="6xl" display="flex" flexDir="column" alignItems={{ base: "center", sm: "center" }} justifyContent="flex-start" py={32} px={16} bg="white" _dark={{ bg: "black" }}>
-                <Stack align={{ base: "center", sm: "flex-start" }} textAlign="center">
-                    <Heading as="h1" width="100%" fontSize="3xl" fontWeight="bold" lineHeight="2.5rem" letterSpacing="-0.03em" color="black" _dark={{ color: "zinc.50" }}>
-                        Rathedle
-                    </Heading>
+        <Box minH="100vh" bg="zinc.50" display="flex" alignItems="center" justifyContent="center" backgroundImage="url('compendium_bg.jpg')" backgroundPosition="center" backgroundRepeat="no-repeat" backgroundSize="cover" backgroundAttachment="fixed">
+            <Box h="100vh" bg="rgba(255,255,255,0.85)" _dark={{ bg: "rgba(0,0,0,0.65)" }} w="100%" backdropFilter="blur(4px)" display="flex" flexDir="column" alignItems={{ base: "center", sm: "center" }} justifyContent="flex-start" >
+                <Analytics />
+                <Box as="main" w="full" h="100%" maxW="6xl" display="flex" flexDir="column" alignItems={{ base: "center", sm: "center" }} justifyContent="space-between" py={32} pb={0} px={16}>
+                    <Box display="flex" flexDir="column">
+                        <Stack align={{ base: "center", sm: "flex-start" }} textAlign="center">
+                            <Heading as="h1" width="100%" fontSize="3xl" fontWeight="bold" lineHeight="2.5rem" letterSpacing="-0.03em" color="black" _dark={{ color: "zinc.50" }}>
+                                Rathedle
+                            </Heading>
 
-                    <Heading as="h3" width="100%" fontSize="1xl" fontWeight="400" lineHeight="1.5rem" letterSpacing="-0.03em" color="black" _dark={{ color: "zinc.50" }}>
-                        Guess a Flesh and Blood Hero. Deduce todays hero by process of elimination.
-                    </Heading>
+                            <Heading as="h3" width="100%" fontSize="1xl" fontWeight="400" lineHeight="1.5rem" letterSpacing="-0.03em" color="black" _dark={{ color: "zinc.50" }}>
+                                Guess a Flesh and Blood Hero. Deduce todays hero by process of elimination.
+                            </Heading>
 
-                    <HeroSearch handleSelect={selectHero} />
-                    <Stack>
-                        {[...selectedHeroes].reverse().map((hero, idx) => (
-                            <HeroResult key={`${hero.id}_${idx}`} selectedHero={hero} heroToday={todayHero} />
-                        ))}
-                    </Stack>
-                </Stack>
+                            <HeroSearch handleSelect={selectHero} />
+                            <Stack>
+
+                                <Stack overflowX="auto">
+                                    <HeroResultHeader />
+                                    {[...selectedHeroes].reverse().map((hero, idx) => (
+                                        <HeroResult
+                                            key={`${hero.id}_${idx}`}
+                                            selectedHero={hero}
+                                            heroToday={todayHero}
+                                        />
+                                    ))}
+                                </Stack>
+                            </Stack>
+                        </Stack>
+                    </Box>
+                    <Box py={6}>
+                        <HStack
+                            mt={8}
+                            w="full"
+                            justify="center"
+                            spacing={2}
+                            fontSize="sm"
+                            color="blackAlpha.700"
+                            _dark={{ color: "whiteAlpha.700" }}
+                        >
+                            <Text>Made by Zac</Text>
+                            <Text>·</Text>
+                            <Link
+                                as={NextLink}
+                                href="https://bsky.app/profile/thatzachary.bsky.social"
+                                isExternal
+                                textDecoration="underline"
+                                _hover={{ opacity: 1 }}
+                                opacity={0.85}
+                            >
+                                Bluesky
+                            </Link>
+                        </HStack>
+                    </Box>
+                </Box>
             </Box>
-        </Box>
+        </Box >
     );
 }

@@ -68,6 +68,7 @@ export function HeroSearch({ handleSelect }: Props) {
         <Box maxW="480px" mx="auto" w="100%" mb="8px">
             <Box position="relative">
                 <Input
+                    backgroundColor="#fff"
                     value={query}
                     placeholder="Type a hero name..."
                     size="sm"

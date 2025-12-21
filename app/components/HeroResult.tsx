@@ -8,6 +8,7 @@ import {
 } from "@chakra-ui/react";
 import heroesData from "../../assets/heroes.json";
 import { HeroResultBox } from "./HeroResultBox";
+import { RESULT_GRID_PROPS } from "./HeroResultHeader";
 
 export type Hero = {
     id: string;
@@ -83,18 +84,9 @@ export function HeroResult({ selectedHero, heroToday }: Props) {
     ];
 
     return (
-        <Box
-            display="grid"
-            gridTemplateColumns={{
-                base: "repeat(6, 75px)",
-                md: "repeat(6, 100px)",
-            }}
-            gap="8px"
-            overflowX="auto"
-            maxW="90vw"
-        >
+        <Box {...RESULT_GRID_PROPS}>
             {fields.map((f) => (
-                <HeroResultBox key={f.label} {...f} />
+                <HeroResultBox key={f.label} {...f} showLabel={false} />
             ))}
         </Box>
     );

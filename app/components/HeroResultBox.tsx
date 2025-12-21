@@ -28,35 +28,41 @@ type HeroField = {
     status: MatchStatus;
 };
 
-export function HeroResultBox({ label, display, status }: HeroField) {
-    const bg = {
-        correct: "green.400",
-        partial: "orange.400",
-        wrong: "red.400",
-    }[status];
+type HeroResultBoxProps = HeroField & { showLabel?: boolean };
 
-    console.log('label', label)
-    console.log('display', display)
-    console.log('status', status)
+
+export function HeroResultBox({ label, display, status, showLabel = true }: HeroResultBoxProps) {
+    const bg = {
+        correct: "green.500",
+        partial: "orange.500",
+        wrong: "#cb4d37",
+    }[status];
 
     return (
         <Box
             display="grid"
             placeItems="center"
-            w={{
-                base: "75px",
-                md: "100px",
-            }}
-            h={{
-                base: "75px",
-                md: "100px",
-            }}
+            w={{ base: "100px", md: "115px" }}
+            h={{ base: "100px", md: "115px" }}
             bg={bg}
-            color="white"
+            color="#fff7ed"
             borderRadius="md"
         >
-            <Text fontSize="s">{label}</Text>
-            <Text fontWeight="semibold" fontSize="xs">{display || 'None'}</Text>
+            {showLabel && (
+                <Text fontSize={{ base: "0.7rem", md: "0.75rem" }} opacity={0.85}>
+                    {label}
+                </Text>
+            )}
+
+            <Text
+                fontWeight="semibold"
+                fontSize={{ base: "0.8rem", md: ".9rem" }}
+                textAlign="center"
+                px={2}
+                lineHeight="1.15"
+            >
+                {display || "None"}
+            </Text>
         </Box>
     );
 }
