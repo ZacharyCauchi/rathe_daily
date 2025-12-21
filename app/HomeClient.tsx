@@ -18,13 +18,45 @@ export default function HomeClient({
     heroes: Hero[];
     todayHero: Hero;
 }) {
-    const [selectedHeroes, setSelectedHeroes] = useState<Hero[]>([]);
+    const STORAGE_KEY_BASE = "rathe_selectedHeroes_v1";
+    const EXPIRY_MS = 24 * 60 * 60 * 1000;
+
+    const storageKeyForDay = `${STORAGE_KEY_BASE}_${todayHero.id}`;
+
+    const [selectedHeroes, setSelectedHeroes] = useState<Hero[]>(() => {
+        try {
+            const raw = localStorage.getItem(storageKeyForDay);
+            if (!raw) return [];
+            const parsed = JSON.parse(raw) as { heroes: Hero[]; ts: number };
+            if (Date.now() - parsed.ts < EXPIRY_MS) {
+                return parsed.heroes || [];
+            } else {
+                localStorage.removeItem(storageKeyForDay);
+            }
+        } catch (e) {
+            localStorage.removeItem(storageKeyForDay);
+        }
+        return [];
+    });
     const jsConfettiRef = useRef<JSConfetti | null>(null);
     const [gameComplete, setGameComplete] = useState<boolean>(false);
 
     useEffect(() => {
         jsConfettiRef.current = new JSConfetti();
     }, []);
+
+    useEffect(() => {
+        try {
+            if (selectedHeroes.length === 0) {
+                localStorage.removeItem(storageKeyForDay);
+                return;
+            }
+            const payload = { heroes: selectedHeroes, ts: Date.now() };
+            localStorage.setItem(storageKeyForDay, JSON.stringify(payload));
+        } catch (e) {
+            // ignore storage errors
+        }
+    }, [selectedHeroes, storageKeyForDay]);
 
     const selectHero = (hero: Hero) => {
         setSelectedHeroes((prev) => [...prev, hero]);
