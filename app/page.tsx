@@ -122,8 +122,7 @@ export default function Home() {
             color="black"
             _dark={{ color: "zinc.50" }}
           >
-            Guess a Flesh and Blood Hero. Deduce todays hero by process of
-            elimination.
+            Guess a Flesh and Blood Hero. Deduce todays hero by process of elimination.
           </Heading>
 
           <HeroSearch handleSelect={selectHero} />

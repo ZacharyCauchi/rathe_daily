@@ -7,6 +7,7 @@ import {
     Card,
     Text,
     VStack,
+    Image,
 } from "@chakra-ui/react";
 import heroesData from "../../assets/heroes.json";
 
@@ -39,28 +40,21 @@ export function HeroSearch({ handleSelect }: Props) {
     const [selectedHero, setSelectedHero] = useState<Hero | null>(null);
     const [isFocused, setIsFocused] = useState(false);
 
-    const results = useMemo(() => {
+    const results = () => {
         const q = query.trim().toLowerCase();
+        console.log('q: ', q);
         if (!q) return [];
 
         return heroes
             .filter((h) => {
                 const name = h.name.toLowerCase();
-                const id = h.id.toLowerCase();
-                const region = h.region.toLowerCase();
-                const classes = h.classes.map((c) => c.toLowerCase());
-                const talents = h.talents.map((t) => t.toLowerCase());
 
                 return (
-                    name.includes(q) ||
-                    id.includes(q) ||
-                    region.includes(q) ||
-                    classes.some((c) => c.includes(q)) ||
-                    talents.some((t) => t.includes(q))
+                    name.includes(q)
                 );
             })
             .slice(0, 10);
-    }, [query]);
+    }
 
     function handleDropdownSelect(hero: Hero) {
         setSelectedHero(hero);
@@ -76,6 +70,7 @@ export function HeroSearch({ handleSelect }: Props) {
                     value={query}
                     placeholder="Type a hero name..."
                     size="sm"
+                    fontSize="16px"
                     onChange={(e) => {
                         setQuery(e.target.value);
                         setSelectedHero(null);
@@ -102,7 +97,7 @@ export function HeroSearch({ handleSelect }: Props) {
                         overflowY="auto"
                         zIndex={10}
                     >
-                        {results.length === 0 && (
+                        {results().length === 0 && (
                             <Box px={3} py={2}>
                                 <Text fontSize="sm" color="gray.500">
                                     No results
@@ -110,7 +105,7 @@ export function HeroSearch({ handleSelect }: Props) {
                             </Box>
                         )}
 
-                        {results.map((hero) => (
+                        {results().map((hero) => (
                             <Box
                                 key={hero.id}
                                 as="button"
@@ -118,13 +113,17 @@ export function HeroSearch({ handleSelect }: Props) {
                                 textAlign="left"
                                 px={3}
                                 py={2}
-                                _hover={{ bg: "gray.50" }}
-                                _focus={{ outline: "none", bg: "gray.50" }}
+                                _hover={{ bg: "gray.100" }}
+                                _focus={{ outline: "none", bg: "gray.100" }}
                                 onMouseDown={(e: React.MouseEvent<HTMLDivElement>) => {
                                     e.preventDefault();
                                 }}
                                 onClick={() => handleDropdownSelect(hero)}
+                                display='flex'
+                                justifyContent='flex-start'
+                                alignItems='center'
                             >
+                                <Image src={'/avatars/' + hero.id + '.webp'} alt={hero.name + ' avatar'} width="40px" height="40px" display='inline-block' mr='8px' />
                                 <Text fontSize="sm" fontWeight="semibold">
                                     {hero.name}
                                 </Text>
