@@ -125,7 +125,6 @@ export function HeroSearch({ handleSelect }: Props) {
                                 alignItems='center'
                             >
                                 <ChakraImage
-                                    as={NextImage}
                                     src={'/avatars/' + hero.id + '.webp'}
                                     alt={hero.name + ' avatar'}
                                     width="40px"
