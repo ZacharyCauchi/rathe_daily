@@ -7,8 +7,9 @@ import {
     Card,
     Text,
     VStack,
-    Image,
 } from "@chakra-ui/react";
+import NextImage from "next/image";
+import { Image as ChakraImage } from "@chakra-ui/react";
 import heroesData from "../../assets/heroes.json";
 
 export type Hero = {
@@ -123,7 +124,17 @@ export function HeroSearch({ handleSelect }: Props) {
                                 justifyContent='flex-start'
                                 alignItems='center'
                             >
-                                <Image src={'/avatars/' + hero.id + '.webp'} alt={hero.name + ' avatar'} width="40px" height="40px" display='inline-block' mr='8px' />
+                                <ChakraImage
+                                    as={NextImage}
+                                    src={'/avatars/' + hero.id + '.webp'}
+                                    alt={hero.name + ' avatar'}
+                                    width="40px"
+                                    height="40px"
+                                    display='inline-block'
+                                    mr='8px'
+                                    loading="lazy"
+                                    decoding="async"
+                                    fallbackSrc="/fallback.png" />
                                 <Text fontSize="sm" fontWeight="semibold">
                                     {hero.name}
                                 </Text>
