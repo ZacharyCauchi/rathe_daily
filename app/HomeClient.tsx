@@ -20,6 +20,7 @@ export default function HomeClient({
 }) {
     const [selectedHeroes, setSelectedHeroes] = useState<Hero[]>([]);
     const jsConfettiRef = useRef<JSConfetti | null>(null);
+    const [gameComplete, setGameComplete] = useState<boolean>(false);
 
     useEffect(() => {
         jsConfettiRef.current = new JSConfetti();
@@ -29,6 +30,7 @@ export default function HomeClient({
         setSelectedHeroes((prev) => [...prev, hero]);
         if (hero.id === todayHero.id) {
             jsConfettiRef.current?.addConfetti();
+            setGameComplete(true);
         }
     };
 
@@ -47,7 +49,7 @@ export default function HomeClient({
                                 Guess a Flesh and Blood Hero. Deduce todays hero by process of elimination.
                             </Heading>
 
-                            <HeroSearch handleSelect={selectHero} />
+                            <HeroSearch handleSelect={selectHero} disabled={gameComplete} />
                             <Stack>
 
                                 <Stack overflowX="auto">

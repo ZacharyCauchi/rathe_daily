@@ -33,10 +33,11 @@ const heroes: Hero[] = heroesData.map((h) => ({
 
 type Props = {
     handleSelect: (hero: Hero) => void;
+    disabled: boolean;
 };
 
 
-export function HeroSearch({ handleSelect }: Props) {
+export function HeroSearch({ handleSelect, disabled }: Props) {
     const [query, setQuery] = useState("");
     const [selectedHero, setSelectedHero] = useState<Hero | null>(null);
     const [isFocused, setIsFocused] = useState(false);
@@ -69,6 +70,7 @@ export function HeroSearch({ handleSelect }: Props) {
             <Box position="relative">
                 <Input
                     backgroundColor="#fff"
+                    disabled={disabled}
                     value={query}
                     placeholder="Type a hero name..."
                     size="sm"
