@@ -1,12 +1,12 @@
 import { Box, Text } from "@chakra-ui/react";
 
-const labels = ["Year", "Region", "Talents", "Classes", "Intellect", "Health"];
+const labels = ["Hero", "Year", "Region", "Talents", "Classes", "Intellect", "Health"];
 
 export const RESULT_GRID_PROPS = {
     display: "grid",
     gridTemplateColumns: {
-        base: "repeat(6, 100px)",
-        md: "repeat(6, 115px)",
+        base: "repeat(7, 100px)",
+        md: "repeat(7, 115px)",
     },
     gap: "8px",
     maxW: "90vw",
@@ -19,7 +19,7 @@ export function HeroResultHeader() {
             <Box
                 w="max-content"
                 display="grid"
-                gridTemplateColumns={{ base: "repeat(6, 100px)", md: "repeat(6, 115px)" }}
+                gridTemplateColumns={{ base: "repeat(7, 100px)", md: "repeat(7, 115px)" }}
                 gap="8px"
                 py={2}
                 bg="rgba(255,255,255,0.75)"

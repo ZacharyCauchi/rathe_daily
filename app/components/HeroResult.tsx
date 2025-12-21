@@ -5,6 +5,7 @@ import {
     Card,
     Text,
     VStack,
+    Image
 } from "@chakra-ui/react";
 import heroesData from "../../assets/heroes.json";
 import { HeroResultBox } from "./HeroResultBox";
@@ -85,6 +86,13 @@ export function HeroResult({ selectedHero, heroToday }: Props) {
 
     return (
         <Box {...RESULT_GRID_PROPS}>
+            <Image
+                src={`/avatars/${selectedHero.id}.webp`}
+                alt={selectedHero.name}
+                w={{ base: "100px", md: "115px" }}
+                h={{ base: "100px", md: "115px" }}
+                borderRadius="md"
+            ></Image>
             {fields.map((f) => (
                 <HeroResultBox key={f.label} {...f} showLabel={false} />
             ))}
