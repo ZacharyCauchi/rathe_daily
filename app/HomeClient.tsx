@@ -10,6 +10,7 @@ import { HeroResult } from "./components/HeroResult";
 import { HeroResultHeader } from "./components/HeroResultHeader";
 import NextLink from "next/link";
 import { HStack, Link, Text } from "@chakra-ui/react";
+import { GameComplete } from "./components/GameComplete";
 
 export default function HomeClient({
     heroes,
@@ -27,6 +28,7 @@ export default function HomeClient({
 
     const jsConfettiRef = useRef<JSConfetti | null>(null);
     const [gameComplete, setGameComplete] = useState<boolean>(false);
+    const [dialogOpen, setDialogOpen] = useState<boolean>(false);
 
     useEffect(() => {
         if (typeof window === "undefined") return;
@@ -39,6 +41,12 @@ export default function HomeClient({
             if (Date.now() - parsed.ts < EXPIRY_MS) {
                 // eslint-disable-next-line react-hooks/set-state-in-effect
                 setSelectedHeroes(parsed.heroes || []);
+                console.log(parsed.heroes);
+                if ((parsed.heroes || []).some((h) => h.id === todayHero.id)) {
+                    // eslint-disable-next-line react-hooks/set-state-in-effect
+                    setGameComplete(true);
+                    setDialogOpen(true);
+                }
             } else {
                 localStorage.removeItem(storageKeyForDay);
             }
@@ -69,7 +77,12 @@ export default function HomeClient({
         if (hero.id === todayHero.id) {
             jsConfettiRef.current?.addConfetti();
             setGameComplete(true);
+            setDialogOpen(true);
         }
+    };
+
+    const closeDialog = () => {
+        setDialogOpen(false);
     };
 
     return (
@@ -83,11 +96,11 @@ export default function HomeClient({
                                 Fabdle
                             </Heading>
 
-                            <Heading as="h3" width="100%" fontSize="2xl" fontWeight="400" lineHeight="1.5rem" letterSpacing="-0.03em" color="black" _dark={{ color: "zinc.50" }} mb="4px">
+                            <Heading as="h3" width="100%" fontSize="2xl" fontWeight="400" lineHeight="1.8rem" letterSpacing="-0.03em" color="black" _dark={{ color: "zinc.50" }} mb="4px">
                                 Guess today&apos;s Flesh and Blood hero!
                             </Heading>
 
-                            <HeroSearch handleSelect={selectHero} disabled={gameComplete} />
+                            <HeroSearch selectedHeroes={selectedHeroes} handleSelect={selectHero} disabled={gameComplete} />
                             <Stack>
 
                                 <Stack overflowX="auto">
@@ -129,6 +142,7 @@ export default function HomeClient({
                     </Box>
                 </Box>
             </Box>
+            <GameComplete todayHero={todayHero} selectedHeroes={selectedHeroes} dialogOpen={dialogOpen} closeDialog={closeDialog} />
         </Box >
     );
 }

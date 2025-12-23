@@ -23,9 +23,8 @@ function utcDayKey(d = new Date()) {
     return d.toISOString().slice(0, 10); // "YYYY-MM-DD"
 }
 
-// stable pick that won’t change if you reorder heroes.json
 function pickId(dayKey: string, ids: string[]) {
-    let h = 2166136261; // FNV-1a-ish
+    let h = 2166136261; // FNV-1a–style. I just trust the math nerds on this one
     for (let i = 0; i < dayKey.length; i++) {
         h ^= dayKey.charCodeAt(i);
         h = Math.imul(h, 16777619);
@@ -47,7 +46,6 @@ export async function GET() {
 
     const heroId = pickId(dayKey, ids);
 
-    // freeze for a year (optional, but nice)
     await redis.set(key, heroId, { EX: 60 * 60 * 24 * 365 });
 
     return NextResponse.json({ heroId });

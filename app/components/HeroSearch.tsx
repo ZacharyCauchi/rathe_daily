@@ -7,6 +7,7 @@ import {
     Card,
     Text,
     VStack,
+    useToast,
 } from "@chakra-ui/react";
 import NextImage from "next/image";
 import { Image as ChakraImage } from "@chakra-ui/react";
@@ -34,10 +35,12 @@ const heroes: Hero[] = heroesData.map((h) => ({
 type Props = {
     handleSelect: (hero: Hero) => void;
     disabled: boolean;
+    selectedHeroes: Hero[];
 };
 
 
-export function HeroSearch({ handleSelect, disabled }: Props) {
+export function HeroSearch({ handleSelect, disabled, selectedHeroes }: Props) {
+    const toast = useToast();
     const [query, setQuery] = useState("");
     const [selectedHero, setSelectedHero] = useState<Hero | null>(null);
     const [isFocused, setIsFocused] = useState(false);
@@ -59,10 +62,36 @@ export function HeroSearch({ handleSelect, disabled }: Props) {
     }
 
     function handleDropdownSelect(hero: Hero) {
-        setSelectedHero(hero);
-        setQuery("");
-        setIsFocused(false);
-        handleSelect(hero);
+        if (selectedHeroes.some((h) => h.id === hero.id)) {
+            setQuery("");
+            setIsFocused(false);
+
+            toast({
+                title: "Hero Already Guessed!",
+                duration: 2000,
+                position: "bottom",
+                render: () => (
+                    <Box
+                        bg="#333"
+                        color="white"
+                        px={4}
+                        py={3}
+                        borderRadius="md"
+                        boxShadow="lg"
+                        textAlign="center"
+                        fontWeight="semibold"
+                        letterSpacing="wide"
+                    >
+                        Hero Already Guessed!
+                    </Box>
+                ),
+            });
+        } else {
+            setSelectedHero(hero);
+            setQuery("");
+            setIsFocused(false);
+            handleSelect(hero);
+        }
     }
 
     return (

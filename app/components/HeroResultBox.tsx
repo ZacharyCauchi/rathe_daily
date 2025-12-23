@@ -60,6 +60,8 @@ export function HeroResultBox({ label, display, status, showLabel = true }: Hero
                 textAlign="center"
                 px={2}
                 lineHeight="1.15"
+                whiteSpace="normal"
+                wordBreak="break-word"
             >
                 {display || "None"}
             </Text>
