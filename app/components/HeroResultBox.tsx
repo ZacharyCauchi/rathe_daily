@@ -56,7 +56,7 @@ export function HeroResultBox({ label, display, status, showLabel = true }: Hero
 
             <Text
                 fontWeight="semibold"
-                fontSize={{ base: "0.75rem", md: ".9rem" }}
+                fontSize={{ base: "0.7rem", md: ".9rem" }}
                 textAlign="center"
                 px={2}
                 lineHeight="1.15"
