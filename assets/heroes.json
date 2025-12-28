@@ -1683,9 +1683,9 @@
   {
     "id": "verdance",
     "name": "Verdance",
-    "year": "",
-    "set": "",
-    "region": "",
+    "year": "2024",
+    "set": "ros",
+    "region": "Aria",
     "talents": [
       "Elemental"
     ],
@@ -1860,5 +1860,18 @@
     ],
     "intellect": "4",
     "health": "40"
+  },
+  {
+    "id": "frankie-make-ends-meat",
+    "name": "Frankie, Make Ends Meat",
+    "year": "2025",
+    "set": "promo",
+    "region": "Demonastery",
+    "talents": [],
+    "classes": [
+      "Necromancer"
+    ],
+    "intellect": "4",
+    "health": "20"
   }
 ]
